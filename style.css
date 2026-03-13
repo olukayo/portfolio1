@@ -28,10 +28,13 @@ a, .btn{
 }
 
 /* DESKTOP-NAV*/
+nav{
+    background-color: #dad7cd;
+}
 
 nav, .nav-links{
     display: flex;
-    background-color: #dad7cd;
+    
 }
 .logo{
     font-size: 24;
