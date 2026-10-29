@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
+  <defs>
+    <!-- Background Frame Gradient (Light Theme) -->
+    <linearGradient id="navBgGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="navBorderGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Brand Gradient -->
+    <linearGradient id="navBrandGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="40%" stop-color="#8B5CF6"/>
+      <stop offset="80%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="navAccentGradLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#DB2777"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Icon Mark: Scaled-down FK Squircle (100x100) -->
+  <g transform="translate(10, 10)">
+    <!-- Base Squircle -->
+    <rect x="0" y="0" width="100" height="100" rx="24" fill="url(#navBgGradLight)" stroke="url(#navBorderGradLight)" stroke-width="2"/>
+    
+    <!-- Code Brackets -->
+    <path d="M 16 42 L 9 50 L 16 58" fill="none" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+    <path d="M 84 42 L 91 50 L 84 58" fill="none" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+
+    <!-- FK Monogram -->
+    <g transform="translate(5, 5) scale(0.18)">
+      <rect x="164" y="136" width="36" height="240" rx="18" fill="url(#navBrandGradLight)"/>
+      <rect x="164" y="136" width="112" height="36" rx="18" fill="url(#navBrandGradLight)"/>
+      <rect x="164" y="238" width="86" height="34" rx="17" fill="url(#navBrandGradLight)"/>
+      <path d="M 236 250 L 338 148 C 345 141 356 141 363 148 C 370 155 370 166 363 173 L 272 264 Z" fill="url(#navBrandGradLight)"/>
+      <path d="M 252 244 L 348 357 C 354 365 353 376 345 382 C 337 388 326 387 320 379 L 222 264 Z" fill="url(#navAccentGradLight)"/>
+      <circle cx="355" cy="155" r="9" fill="#06B6D4"/>
+    </g>
+  </g>
+
+  <!-- Brand Typography (Light Mode: Dark Crisp Slate) -->
+  <g transform="translate(130, 0)">
+    <!-- Primary Name: FAJIMI in Deep Obsidian/Slate, KAYODE in Gradient -->
+    <text x="0" y="58" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Inter, sans-serif" font-size="30" font-weight="800" letter-spacing="1.5" fill="#0F172A">
+      FAJIMI <tspan fill="url(#navBrandGradLight)">KAYODE</tspan>
+    </text>
+
+    <!-- Subtitle / Role in readable slate-600 -->
+    <text x="0" y="86" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Inter, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#475569">
+      FRONTEND &amp; MOBILE DEVELOPER
+    </text>
+
+    <!-- Active status emerald indicator -->
+    <circle cx="295" cy="82" r="3.5" fill="#10B981" />
+  </g>
+</svg>

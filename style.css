@@ -1033,3 +1033,25 @@ img {
   opacity: 1;
   transform: translateY(0);
 }
+/* Logo Styling & Responsive Sizing */
+.nav-logo img {
+    height: 50px;
+    width: auto;           /* Automatically keeps the correct 4.5:1 aspect ratio */
+    display: block;
+}
+
+/* Default (Dark Mode) */
+.nav-logo .logo-dark {
+    display: block;
+}
+.nav-logo .logo-light {
+    display: none;
+}
+
+/* Light Mode: Switch to the light version */
+[data-theme="light"] .nav-logo .logo-dark {
+    display: none;
+}
+[data-theme="light"] .nav-logo .logo-light {
+    display: block;
+}
